@@ -5,3 +5,6 @@
 by-the-marina-theme/node_modules/
 by-the-marina-theme/.cache/
 by-the-marina-theme/public
+node_modules/
+.cache/
+public
