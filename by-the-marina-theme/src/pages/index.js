@@ -1,24 +1,64 @@
 import * as React from "react";
 
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 
 import Link from "../components/Link";
 import Copyright from "../components/Copyright";
 
 export default function Index() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="lg">
       <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Gatsby v5 example
-        </Typography>
-        <Link to="/about" color="secondary">
-          Go to the about page
-        </Link>
-        <Copyright />
+        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box mr={1}>Heart Icon</Box>
+            <Link to="/" color="secondary">
+              Name
+            </Link>
+          </Box>
+          <Stack direction="row" spacing={{ xs: 1, sm: 2, md: 4 }}>
+            <Link to="/my-story" color="secondary">
+              My Story
+            </Link>
+            <Link to="/my-projects" color="secondary">
+              My Projects
+            </Link>
+            <Link to="/my-resume" color="secondary">
+              My Resume
+            </Link>
+            <Link to="/contact" color="secondary">
+              Contact
+            </Link>
+          </Stack>
+        </Box>
+
+        <Box> Image </Box>
+
+        <Container maxWidth="md">
+          <Stack
+            direction={isMobile ? "column" : "row"}
+            justifyContent="space-between"
+            sx={{
+              display: "flex",
+              flexDirection: isMobile ? "column" : "row",
+            }}
+            spacing={1}
+          >
+            <Box sx={{ flexGrow: 1, border: `1px solid #D3D3D3` }}>info</Box>
+            <Box sx={{ flexGrow: 2, border: `1px solid #D3D3D3` }}>info</Box>
+          </Stack>
+        </Container>
       </Box>
+      <Copyright />
     </Container>
   );
 }
