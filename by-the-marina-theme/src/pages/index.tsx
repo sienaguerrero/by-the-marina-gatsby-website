@@ -4,19 +4,32 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 
 import Link from "../components/Link";
 import Copyright from "../components/Copyright";
 
+const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
+
 export default function Index() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const colorMode = React.useContext(ColorModeContext);
 
   return (
     <Container maxWidth="lg">
+      <Box>
+        <Button
+          onClick={() => {
+            console.log("toggle");
+            colorMode.toggleColorMode();
+          }}
+        >
+          Dark Mode
+        </Button>
+      </Box>
       <Box sx={{ my: 4 }}>
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -32,11 +45,14 @@ export default function Index() {
             <Link to="/my-projects" color="secondary">
               My Projects
             </Link>
-            <Link to="/my-resume" color="secondary">
+            <Link to="/about" color="secondary">
               My Resume
             </Link>
             <Link to="/contact" color="secondary">
               Contact
+            </Link>
+            <Link to="/about" color="secondary">
+              About
             </Link>
           </Stack>
         </Box>
@@ -53,8 +69,8 @@ export default function Index() {
             }}
             spacing={1}
           >
-            <Box sx={{ flexGrow: 1, border: `1px solid #D3D3D3` }}>info</Box>
-            <Box sx={{ flexGrow: 2, border: `1px solid #D3D3D3` }}>info</Box>
+            <Box sx={{ flexGrow: 1, border: "1px solid #D3D3D3" }}>info</Box>
+            <Box sx={{ flexGrow: 2, border: "1px solid #D3D3D3" }}>info</Box>
           </Stack>
         </Container>
       </Box>

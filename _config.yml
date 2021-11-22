@@ -1,0 +1,65 @@
+# Site Settings #
+
+# Title of your website
+title: "Siena Maria Guerrero"
+
+# The slogan describes your website and is used on homepage in <title> and other important places
+slogan: "Tech Enthusiast, Software Engineer"
+
+# The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
+description: "Personal website for Siena Guerrero. Digital designer, tinkerer, and lover of coding. Current Software Engineer at Swoop, former Computer Science Major at Harvey Mudd College."
+credits: '<p>Created with &hearts; by <a href="sienaguerrero.github.io">sienaguerrero</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> using <a href="http://phlow.github.io/feeling-responsive/">MUIv5</a>.</p>'
+
+# Main author of the website
+author: sienaguerrero
+
+# This URL is the main address for absolute links. Don't include a slash at the end.
+#
+url: "https://sienaguerrero.github.io"
+baseurl: "/website"
+
+# This is for the editing function in _/includes/improve_content
+# Leave it empty if your site is not on GitHub/GitHub Pages
+improve_content: https://github.com/sienaguerrero/website/edit/gh-pages
+
+# This URL points directly to the images directory making
+# things easier to link to images in posts and templates. It needs a slash at the end.
+#
+# Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
+# Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
+#
+urlimg: "https://sienaguerrero.github.io/website/images/"
+
+# Logo size is 600x80 pixels
+logo: #"logo.png"
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      show_meta: false # Hide metadata for all pages
+      # sidebar:    		# Possible values › left, right › by default there will be no sidebar
+      comments: false
+      author: sienaguerrero # Default author for pages
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      show_meta: true # Show metadata for all posts
+      # sidebar:        # Possible values › left, right › by default there will be no sidebar
+      comments: false
+      author: sienaguerrero # Default author for posts
+
+favicon-32x32: "favicon-32x32.png"
+touch-icon-192x192: "touch-icon-192x192.png"
+apple-touch-icon-180x180-precomposed: "apple-touch-icon-180x180-precomposed.png"
+apple-touch-icon-152x152-precomposed: "apple-touch-icon-152x152-precomposed.png"
+apple-touch-icon-144x144-precomposed: "apple-touch-icon-144x144-precomposed.png"
+apple-touch-icon-120x120-precomposed: "apple-touch-icon-120x120-precomposed.png"
+apple-touch-icon-114x114-precomposed: "apple-touch-icon-114x114-precomposed.png"
+apple-touch-icon-76x76-precomposed: "apple-touch-icon-76x76-precomposed.png"
+apple-touch-icon-72x72-precomposed: "apple-touch-icon-72x72-precomposed.png"
+apple-touch-icon-precomposed: "apple-touch-icon-precomposed.png"
+msapplication_tileimage: "msapplication_tileimage.png" # Size 144x144
+msapplication_tilecolor: "#fabb00"
