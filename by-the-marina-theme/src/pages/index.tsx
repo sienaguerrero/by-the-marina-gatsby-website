@@ -10,8 +10,7 @@ import Stack from "@mui/material/Stack";
 
 import Link from "../components/Link";
 import Copyright from "../components/Copyright";
-
-const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
+import { ColorModeContext } from "../../plugins/gatsby-plugin-top-layout/TopLayout";
 
 export default function Index() {
   const theme = useTheme();

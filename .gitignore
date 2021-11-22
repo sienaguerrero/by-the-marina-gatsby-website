@@ -1,10 +1,11 @@
-# OSX
-.DS_Store
-
-# by the marina
-by-the-marina-theme/node_modules/
-by-the-marina-theme/.cache/
-by-the-marina-theme/public
 node_modules/
 .cache/
 public
+
+# by the marina theme
+by-the-marina-theme/node_modules/
+by-the-marina-theme/.cache/
+by-the-marina-theme/public
+
+# OSX
+.DS_Store

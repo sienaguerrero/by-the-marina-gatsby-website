@@ -1,4 +1,19 @@
 {
+  "name": "by-the-marina-gatsby-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Siena's Personal Gatby Website, using 'By the Marina' theme.",
+  "author": "Siena Maria Guerrero",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "cd by-the-marina-theme && gatsby develop",
+    "start": "cd by-the-marina-theme && gatsby develop",
+    "build": "cd by-the-marina-theme && gatsby build",
+    "serve": "cd by-the-marina-theme && gatsby serve",
+    "clean": "cd by-the-marina-theme && gatsby clean"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.1-alpha.18",
     "@typescript-eslint/parser": "^5.4.0",

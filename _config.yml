@@ -8,7 +8,7 @@ slogan: "Tech Enthusiast, Software Engineer"
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
 description: "Personal website for Siena Guerrero. Digital designer, tinkerer, and lover of coding. Current Software Engineer at Swoop, former Computer Science Major at Harvey Mudd College."
-credits: '<p>Created with &hearts; by <a href="sienaguerrero.github.io">sienaguerrero</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> using <a href="http://phlow.github.io/feeling-responsive/">MUIv5</a>.</p>'
+credits: '<p>Created with &hearts; by <a href="sienaguerrero.github.io">sienaguerrero</a> with <a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a> using <a href="https://mui.com/">MUI</a>.</p>'
 
 # Main author of the website
 author: sienaguerrero
