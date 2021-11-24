@@ -1,30 +1,44 @@
 {
-  "name": "by-the-marina-gatsby-website",
+  "name": "by-the-marina-theme",
   "version": "1.0.0",
   "private": true,
-  "description": "Siena's Personal Gatby Website, using 'By the Marina' theme.",
+  "description": "My Gatsby Site",
   "author": "Siena Maria Guerrero",
   "keywords": [
     "gatsby"
   ],
   "scripts": {
-    "develop": "cd by-the-marina-theme && gatsby develop",
-    "start": "cd by-the-marina-theme && gatsby develop",
-    "build": "cd by-the-marina-theme && gatsby build",
-    "serve": "cd by-the-marina-theme && gatsby serve",
-    "clean": "cd by-the-marina-theme && gatsby clean"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.4.1-alpha.18",
-    "@typescript-eslint/parser": "^5.4.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^19.0.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "typescript": "^4.5.2"
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@mui/icons-material": "^5.1.1",
+    "@mui/material": "^5.0.3",
+    "@svgr/webpack": "^5.5.0",
+    "eslint": "^8.3.0",
+    "gatsby": "^3.13.1",
+    "gatsby-plugin-image": "^1.14.1",
+    "gatsby-plugin-layout": "^2.14.0",
+    "gatsby-plugin-manifest": "^3.14.0",
+    "gatsby-plugin-mdx": "^2.14.0",
+    "gatsby-plugin-react-helmet": "^4.14.0",
+    "gatsby-plugin-sharp": "^3.14.1",
+    "gatsby-plugin-sitemap": "^4.10.0",
+    "gatsby-source-filesystem": "^3.14.0",
+    "gatsby-theme-material-ui": "^5.0.0",
+    "gatsby-transformer-sharp": "^3.14.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.1"
   }
 }
