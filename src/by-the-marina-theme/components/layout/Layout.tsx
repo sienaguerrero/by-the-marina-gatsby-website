@@ -2,8 +2,8 @@ import React, { ReactNode } from "react";
 
 import { Box } from "@mui/material/";
 import TopNavigationBar from "./TopNavigationBar";
-import Footer from "./Footer";
-import Copyright from "./Copyright";
+import Footer from "./footer/Footer";
+import Copyright from "./footer/Copyright";
 
 type LayoutProps = {
   children: ReactNode;

@@ -5,11 +5,11 @@ import { Box, IconButton, Stack } from "@mui/material";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 
-import flagNMHeart from "../assets/svg/TurquoiseNMHeart.svg";
+import flagNMHeart from "../../assets/svg/TurquoiseNMHeart.svg";
 
-import { useScreenSize } from "../hooks/useScreenSize";
-import Link from "./Link";
-import { ColorModeContext } from "../../../plugins/gatsby-plugin-top-layout/useAppTheme";
+import { useScreenSize } from "../../hooks/useScreenSize";
+import Link from "../Link";
+import { ColorModeContext } from "../../../../plugins/gatsby-plugin-top-layout/useAppTheme";
 
 export const TOP_BAR_HEIGHT_MOBILE = 56;
 export const TOP_BAR_HEIGHT_DESKTOP = 78;

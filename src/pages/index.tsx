@@ -12,7 +12,6 @@ import sienaAndRubyImage from "../images/ruby-and-siena.jpg";
 export default function IndexPage() {
   const theme = useTheme();
 
-  console.log("theme", theme);
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const title = "Siena Maria Guerrero";

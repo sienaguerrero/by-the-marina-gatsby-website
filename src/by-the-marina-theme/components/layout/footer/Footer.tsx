@@ -1,9 +1,9 @@
 import React from "react";
 
 import { Box, Card, PaletteMode, Paper, useTheme } from "@mui/material";
-import { getPaletteDesignTokens } from "../../theme";
-import { useAppTheme } from "../../../plugins/gatsby-plugin-top-layout/useAppTheme";
-import { useScreenSize } from "../hooks/useScreenSize";
+import { getPaletteDesignTokens } from "../../../../theme";
+import { useAppTheme } from "../../../../../plugins/gatsby-plugin-top-layout/useAppTheme";
+import { useScreenSize } from "../../../hooks/useScreenSize";
 
 export const FOOTER_HEIGHT_MOBILE = 56;
 export const FOOTER_HEIGHT_DESKTOP = 78;

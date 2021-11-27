@@ -18,7 +18,6 @@ function useAppTheme() {
     return {
       mode,
       toggleColorMode: () => {
-        console.log("togglin");
         setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
       },
     };
