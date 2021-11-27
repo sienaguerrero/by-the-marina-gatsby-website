@@ -18,6 +18,10 @@ export default function TopLayout(props) {
           href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Pacifico:300,400,500,700&display=swap"
+        />
       </>
       <ColorModeContext.Provider value={colorMode}>
         <ThemeProvider theme={appTheme}>
