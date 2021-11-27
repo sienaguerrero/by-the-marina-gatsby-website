@@ -12,25 +12,17 @@ type LayoutProps = {
 function Layout(props: LayoutProps) {
   const { children } = props;
 
-  // hooks
-
-  // derived state
-
   return (
     <Box display="flex" flexDirection="column">
-      {/* Navigation */}
       <TopNavigationBar />
       <Box display="flex" flexDirection="row">
-        {/* Main Content */}
         <Box display="flex" flexDirection="column" width="100%" height="100%">
           <Box component="main" sx={{ display: "flex", flexDirection: "row" }}>
             {children}
           </Box>
         </Box>
       </Box>
-      {/* Footer Content */}
       <Footer />
-      <Copyright />
     </Box>
   );
 }

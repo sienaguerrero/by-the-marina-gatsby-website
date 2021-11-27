@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function AboutPage() {
+export default function ContactPage() {
   return <div>YOLO SWAG</div>;
 }

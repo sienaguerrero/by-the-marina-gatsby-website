@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/by-the-marina-gatsby-website",
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "By the Marina theme",

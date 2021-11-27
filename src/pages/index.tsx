@@ -9,9 +9,15 @@ import Stack from "@mui/material/Stack";
 
 import sienaAndRubyImage from "../images/ruby-and-siena.jpg";
 
-export default function Index() {
+export default function IndexPage() {
   const theme = useTheme();
+
+  console.log("theme", theme);
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const title = "Siena Maria Guerrero";
+  const image_fullwidth = "/headers/header_ca-coast-ocean.jpg";
+  const caption = "Shot along the CA coast, during my roadtrip in Summer 2018.";
 
   return (
     <Container maxWidth="lg">

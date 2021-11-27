@@ -1,6 +1,6 @@
 import * as React from "react";
-import { PaletteMode, useMediaQuery } from "@mui/material";
-import getTheme from "../../src/theme";
+import { createTheme, PaletteMode, useMediaQuery } from "@mui/material";
+import { getPaletteDesignTokens } from "../../src/theme";
 
 export const ColorModeContext = React.createContext({
   mode: "light",
@@ -14,15 +14,23 @@ function useAppTheme() {
     prefersDarkMode ? "dark" : "light"
   );
 
-  const colorMode = {
-    mode,
-    toggleColorMode: () => {
-      setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
-    },
-  };
+  const colorMode = React.useMemo(() => {
+    return {
+      mode,
+      toggleColorMode: () => {
+        console.log("togglin");
+        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+      },
+    };
+  }, [mode]);
 
   // Update the theme only if the mode changes
-  const appTheme = React.useMemo(() => getTheme(mode), [mode]);
+  const appTheme = React.useMemo(() => {
+    return createTheme({
+      ...getPaletteDesignTokens(mode),
+    });
+  }, [mode]);
+
   return { colorMode, appTheme };
 }
 

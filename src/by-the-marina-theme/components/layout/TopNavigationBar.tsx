@@ -1,13 +1,15 @@
 import React from "react";
-import { ColorModeContext } from "../../plugins/gatsby-plugin-top-layout/TopLayout";
+import { navigate } from "gatsby";
 
 import { Box, IconButton, Stack } from "@mui/material";
-import NightsStayIcon from "@mui/icons-material/NightsStay";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
-import flagNMHeart from "../images/TurquoiseNMHeart.svg";
+import flagNMHeart from "../assets/svg/TurquoiseNMHeart.svg";
 
 import { useScreenSize } from "../hooks/useScreenSize";
 import Link from "./Link";
+import { ColorModeContext } from "../../../plugins/gatsby-plugin-top-layout/useAppTheme";
 
 export const TOP_BAR_HEIGHT_MOBILE = 56;
 export const TOP_BAR_HEIGHT_DESKTOP = 78;
@@ -17,27 +19,23 @@ function TopNavigationBar() {
   const colorMode = React.useContext(ColorModeContext);
 
   return (
-    <Box
-      mt={
-        isMobileView
-          ? `${TOP_BAR_HEIGHT_MOBILE}px`
-          : `${TOP_BAR_HEIGHT_DESKTOP}px`
-      }
-    >
+    <Box>
       <Box sx={{ display: "flex", justifyContent: "space-between" }}>
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Box
+            p={1}
             mr={1}
-            sx={{ root: { "& svg": { color: "#34f" } } }}
+            sx={{ height: 80, color: "#000" }}
             component="img"
             src={flagNMHeart}
-          ></Box>
-
-          <Link to="/" color="secondary">
-            Siena Guerrero
-          </Link>
+            onClick={() => navigate("/")}
+          />
         </Box>
-        <Stack direction="row" spacing={{ xs: 1, sm: 2, md: 4 }}>
+        <Stack
+          direction="row"
+          spacing={{ xs: 1, sm: 2, md: 4 }}
+          sx={{ alignItems: "center" }}
+        >
           <Link to="/my-story" color="secondary">
             My Story
           </Link>
@@ -58,11 +56,7 @@ function TopNavigationBar() {
             aria-label="toggle dark code"
             onClick={() => colorMode.toggleColorMode()}
           >
-            {colorMode.mode === "light" ? (
-              <NightsStayIcon />
-            ) : (
-              <NightsStayIcon />
-            )}
+            {colorMode.mode === "light" ? <DarkModeIcon /> : <LightModeIcon />}
           </IconButton>
         </Stack>
       </Box>

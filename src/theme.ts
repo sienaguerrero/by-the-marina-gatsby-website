@@ -28,11 +28,3 @@ export const getPaletteDesignTokens = (mode: PaletteMode) => ({
     }),
   },
 });
-
-// A custom theme for this app
-const getTheme = (mode: PaletteMode) =>
-  createTheme({
-    ...getPaletteDesignTokens(mode),
-  });
-
-export default getTheme;
