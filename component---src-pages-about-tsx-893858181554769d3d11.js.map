@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-about-tsx-893858181554769d3d11.js","mappings":"yLAEe,SAASA,IACtB,OAAO","sources":["webpack://by-the-marina-theme/./src/pages/about.tsx"],"sourcesContent":["import React from \"react\";\n\nexport default function AboutPage() {\n  return <div>YOLO SWAG</div>;\n}\n"],"names":["AboutPage"],"sourceRoot":""}
