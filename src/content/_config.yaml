@@ -1,27 +1,30 @@
 # Site Settings #
-title: "Siena Maria Guerrero"
+title: "Siena Guerrero"
+name: "Siena Maria Guerrero"
+location: "Los Angeles"
 slogan: "Tech Enthusiast, Software Engineer"
+callout: "Currently looking for research or cs-related internships in Summer 2020."
 
 # Use a maximum of 150 characters for SEO-purposes.
-description: "Personal website for Siena Guerrero. Digital designer, tinkerer, and lover of coding. Current Software Engineer at Swoop, former Computer Science Major at Harvey Mudd College."
-credits: '<p>Created with &hearts; by <a href="sienaguerrero.github.io">sienaguerrero</a> with <a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a> using <a href="https://mui.com/">MUI</a>.</p>'
+description:
+  Personal website for Siena Guerrero. Digital designer, tinkerer, and lover of coding. Software Engineer at Swoop, former Computer Science Major at Harvey Mudd College.`
 
-# Main author of the website
+  # Main author of the website
 author: sienaguerrero
+email: hello@sienaguerrero.com
 
-# 'About This Site' and site hosting information in footer
-about-this-site: Personal website for Siena Guerrero. Digital designer, tinkerer, and lover of coding. Computer Science Major at Harvey Mudd College. Learn more about my story.
-hosting-description: Hosted on Github Pages, maintained on Github. If you find an error on this site, let me know by submitting an issue.
+# Social media links
+socialMedia:
+  instagram: sienaguerrero
+  linkedin: sienaguerrero
+  github: sienaguerrero
 
 # 'Many Thanks' section in footer
-many-thanks:
+manyThanks:
   - item:
-      - name: "Favicons by my friend, Teresa Ibarra"
+      - text: "Favicons by Teresa Ibarra"
       - url: "http://teresaibarra.github.io/"
-      - class: "network-favicon"
-      - title: "Favicons by Teresa Ibarra"
+
   - item:
-      - name: "Personal Icon by Lydia Amora"
+      - text: "Personal Icon by Lydia Amora"
       - url: "https://twitter.com/lydiaamora"
-      - class: "image-icon"
-      - title: "Personal Icon by Lydia Amora"
