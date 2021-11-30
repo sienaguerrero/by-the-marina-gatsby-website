@@ -1,9 +1,8 @@
-import React, { ReactNode } from "react";
+import React from "react";
 
-import { Box } from "@mui/material/";
-import TopNavigationBar from "./TopNavigationBar";
-import Footer from "./footer/Footer";
-import Copyright from "./footer/Copyright";
+import { Box, Typography, useTheme } from "@mui/material/";
+import { useScreenSize } from "../../hooks/useScreenSize";
+import { black, white } from "../../../theme";
 
 type ImageHeaderProps = {
   imageSrc: string;
@@ -13,19 +12,61 @@ type ImageHeaderProps = {
 };
 
 function ImageHeader(props: ImageHeaderProps) {
-  const { imageSrc, imageAltTitle, imageCaption, imageOverlayText } = props;
+  const { imageSrc, imageCaption, imageOverlayText } = props;
+
+  const { isMobileView } = useScreenSize();
+  const theme = useTheme();
+
+  const isDarkMode = theme.palette.mode === "dark";
 
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      sx={{
-        backgroundImage: `url(${imageSrc})`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    ></Box>
+    <Box display="flex" flexDirection="column">
+      <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        width="100%"
+        height={isMobileView ? "100px" : "300px"}
+        sx={{
+          backgroundImage: `url(${imageSrc})`,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        {!isMobileView && (
+          <Typography
+            sx={{
+              color: white,
+              fontFamily: "Dawning of a New Day",
+              fontWeight: "bold",
+              fontSize: "80px",
+              textShadow: `2px 2px ${theme.palette.primary.main}`,
+              textAlign: "center",
+              ...(!isDarkMode && { color: black }),
+            }}
+          >
+            {imageOverlayText}
+          </Typography>
+        )}
+      </Box>
+      <Box mt={0.5} display="flex" justifyContent="flex-end" pr={1}>
+        <Typography
+          variant="caption"
+          color={isDarkMode ? "primary" : theme.palette.primary.dark}
+          {...(isMobileView
+            ? {
+                sx: {
+                  fontWeight: "bold",
+                  textAlign: isMobileView ? "right" : "center",
+                },
+              }
+            : { sx: { fontWeight: "bold" } })}
+        >
+          {imageCaption}
+        </Typography>
+      </Box>
+    </Box>
   );
 }
 

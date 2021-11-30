@@ -16,9 +16,7 @@ function Layout(props: LayoutProps) {
       <TopNavigationBar />
       <Box display="flex" flexDirection="row">
         <Box display="flex" flexDirection="column" width="100%" height="100%">
-          <Box component="main" sx={{ display: "flex", flexDirection: "row" }}>
-            {children}
-          </Box>
+          <Box component="main">{children}</Box>
         </Box>
       </Box>
       <Footer />
