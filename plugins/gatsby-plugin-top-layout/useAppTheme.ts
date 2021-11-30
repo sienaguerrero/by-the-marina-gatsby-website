@@ -1,5 +1,11 @@
 import * as React from "react";
-import { createTheme, PaletteMode, useMediaQuery } from "@mui/material";
+import {
+  Components,
+  createTheme,
+  PaletteMode,
+  responsiveFontSizes,
+  useMediaQuery,
+} from "@mui/material";
 import { getPaletteDesignTokens } from "../../src/theme";
 
 export const ColorModeContext = React.createContext({
@@ -23,11 +29,19 @@ function useAppTheme() {
     };
   }, [mode]);
 
+  /* Override mui Styles */
+  const components: Components = {};
+
   // Update the theme only if the mode changes
   const appTheme = React.useMemo(() => {
-    return createTheme({
+    const theme = createTheme({
+      typography: {
+        fontFamily: "Roboto",
+      },
+      components,
       ...getPaletteDesignTokens(mode),
     });
+    return responsiveFontSizes(theme);
   }, [mode]);
 
   return { colorMode, appTheme };
