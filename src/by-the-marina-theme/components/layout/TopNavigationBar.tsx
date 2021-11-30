@@ -29,6 +29,8 @@ import { ColorModeContext } from "../../../../plugins/gatsby-plugin-top-layout/u
 import NavigationBarLink from "./NavigationBarLink";
 import { white } from "../../../theme";
 
+import downloadFile from "../../../downloads/SienaGuerrero-Resume.pdf";
+
 export const TOP_BAR_HEIGHT_MOBILE = 56;
 export const TOP_BAR_HEIGHT_DESKTOP = 78;
 
@@ -150,8 +152,9 @@ function TopNavigationBar() {
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
                       <NavigationBarLink
-                        linkTo="/my-resume"
+                        linkTo={downloadFile}
                         linkText="My Resume"
+                        download
                       />
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
@@ -218,9 +221,12 @@ function TopNavigationBar() {
                     linkTo="/my-projects"
                     linkText="My Projects"
                   />
-                  <NavigationBarLink linkTo="/my-resume" linkText="My Resume" />
+                  <NavigationBarLink
+                    linkTo={downloadFile}
+                    linkText="My Resume"
+                    download
+                  />
                   <NavigationBarLink linkTo="/contact" linkText="Contact" />
-                  <NavigationBarLink linkTo="/about" linkText="About" />
 
                   <Box p={1} mr={1}>
                     <ButtonBase onClick={() => navigate("/")}>
