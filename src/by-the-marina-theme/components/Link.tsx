@@ -9,7 +9,7 @@ type LinkProps = {
 };
 
 const Link = React.forwardRef(function Link({ ...props }: LinkProps) {
-  return <MuiLink component={GatsbyLink} to="/" {...props} />;
+  return <MuiLink component={GatsbyLink} {...props} />;
 });
 
 export default Link;
