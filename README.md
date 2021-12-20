@@ -1,4 +1,4 @@
-# Siena's Personal Jekyll Site
+# Siena's Personal Gatsby Site
 
 This repository contains the files for my personal website built by using Gatsby CLI using React, Typescript, and MUI components.
 

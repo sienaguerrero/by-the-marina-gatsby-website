@@ -54,14 +54,14 @@ function Footer() {
               <Typography>
                 Hosted on{" "}
                 <Link href="https://pages.github.com">Github Pages,</Link>{" "}
-                maintained on{" "}
-                <Link href="https://github.com/sienaguerrero/website">
+                maintained on Github.
+                {/* <Link href="https://github.com/sienaguerrero/website">
                   Github.{" "}
                 </Link>
                 If you find an error on this site, let me know by{" "}
                 <Link href="https://github.com/sienaguerrero/website/issues/new">
                   submitting an issue.
-                </Link>
+                </Link> */}
               </Typography>
             </Box>
           </Stack>
