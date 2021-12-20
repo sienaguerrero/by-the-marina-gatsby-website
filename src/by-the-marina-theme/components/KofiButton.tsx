@@ -6,6 +6,7 @@ type KofiButtonProps = {
   kofiID;
   textColor;
 };
+
 function KofiButton(props: KofiButtonProps) {
   const { title, color, textColor, kofiID } = props;
   const kofiwidget = () => {

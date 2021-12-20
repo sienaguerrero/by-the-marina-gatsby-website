@@ -2,7 +2,7 @@ import React from "react";
 
 import { Box, Typography } from "@mui/material";
 
-import Link from "../Link";
+import Link from "../../Link";
 
 type NavigationBarLinkType = {
   linkText: string;

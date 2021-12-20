@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 
 import { Box } from "@mui/material/";
-import TopNavigationBar from "./TopNavigationBar";
+import TopNavigationBar from "./header/TopNavigationBar";
 import Footer from "./footer/Footer";
 
 type LayoutProps = {

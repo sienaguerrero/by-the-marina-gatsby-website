@@ -20,16 +20,16 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import MenuIcon from "@mui/icons-material/Menu";
 
-import TurquoiseNMHeart from "../../assets/svg/TurquoiseNMHeart";
-import YAMLData from "../../../content/_config.yaml";
+import TurquoiseNMHeart from "../../../assets/svg/TurquoiseNMHeart";
+import YAMLData from "../../../../content/_config.yaml";
 
-import { useScreenSize } from "../../hooks/useScreenSize";
+import { useScreenSize } from "../../../hooks/useScreenSize";
 
-import { ColorModeContext } from "../../../../plugins/gatsby-plugin-top-layout/useAppTheme";
-import NavigationBarLink from "./NavigationBarLink";
-import { white } from "../../../theme";
+import { ColorModeContext } from "../../../../../plugins/gatsby-plugin-top-layout/useAppTheme";
+import NavigationBarLink from "../navigation/NavigationBarLink";
+import { white } from "../../../../theme";
 
-import downloadFile from "../../../downloads/SienaGuerrero-Resume.pdf";
+import downloadFile from "../../../../downloads/SienaGuerrero-Resume.pdf";
 
 export const TOP_BAR_HEIGHT_MOBILE = 56;
 export const TOP_BAR_HEIGHT_DESKTOP = 78;

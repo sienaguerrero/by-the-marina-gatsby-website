@@ -1,8 +1,8 @@
 import React from "react";
 
 import { Box, Typography, useTheme } from "@mui/material/";
-import { useScreenSize } from "../../hooks/useScreenSize";
-import { black, white } from "../../../theme";
+import { useScreenSize } from "../../../hooks/useScreenSize";
+import { black, white } from "../../../../theme";
 
 type ImageHeaderProps = {
   imageSrc: string;
@@ -56,12 +56,22 @@ function ImageHeader(props: ImageHeaderProps) {
           color={isDarkMode ? "primary" : theme.palette.primary.dark}
           {...(isMobileView
             ? {
-                sx: {
-                  fontWeight: "bold",
-                  textAlign: isMobileView ? "right" : "center",
-                },
+                sx: [
+                  !isDarkMode && { background: "rgba(255,255,255,0.5)" },
+                  {
+                    fontWeight: "bold",
+                    textAlign: isMobileView ? "right" : "center",
+                  },
+                ],
               }
-            : { sx: { fontWeight: "bold" } })}
+            : {
+                sx: [
+                  !isDarkMode && { background: "rgba(255,255,255,0.5)" },
+                  {
+                    fontWeight: "bold",
+                  },
+                ],
+              })}
         >
           {imageCaption}
         </Typography>

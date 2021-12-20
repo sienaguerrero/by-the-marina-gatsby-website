@@ -14,7 +14,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import YAMLData from "../content/_config.yaml";
 import sienaAndRubyImage from "../images/ruby-and-siena.jpg";
-import ImageHeader from "../by-the-marina-theme/components/layout/ImageHeader";
+import ImageHeader from "../by-the-marina-theme/components/layout/header/ImageHeader";
 import headerImage from "../by-the-marina-theme/assets/jpg/banners/headers/header_ca-coast-ocean.jpg";
 import {
   Accordion,
@@ -159,20 +159,14 @@ export default function IndexPage() {
                   Science at{" "}
                   <Link href="https://www.hmc.edu">Harvey Mudd College.</Link>{" "}
                   You can see projects illustrating some of my other passions
-                  and academic pursuits{" "}
-                  <Link
-                    href="mailto:
-                  sienaguerrero@gmail.com"
-                  >
-                    here.
-                  </Link>
+                  and academic pursuits <Link href="/my-projects">here.</Link>
                 </Typography>
 
                 <Typography sx={{ mb: 1 }}>
                   Check out my resume and{" "}
                   <Link
                     href="mailto:
-                  sienaguerrero@gmail.com"
+                  hello@sienaguerrero.com"
                   >
                     send me an email
                   </Link>{" "}
@@ -190,6 +184,13 @@ export default function IndexPage() {
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
+                      <Typography>
+                        My academic passions center around Human-Computer
+                        Interactions and Brain-Computer Interfaces. Some of my
+                        mini-passions include web development, open-source
+                        technology, and empowering women in tech.
+                      </Typography>
+
                       <Typography sx={{ mb: 1 }}>
                         I am particularly interested in improving human
                         interactions with technology in our digital world by

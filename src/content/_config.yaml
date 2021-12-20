@@ -6,10 +6,9 @@ slogan: "Tech Enthusiast, Software Engineer"
 callout: "Currently looking for research or cs-related internships in Summer 2020."
 
 # Use a maximum of 150 characters for SEO-purposes.
-description:
-  Personal website for Siena Guerrero. Digital designer, tinkerer, and lover of coding. Software Engineer at Swoop, former Computer Science Major at Harvey Mudd College.`
+description: Personal website for Siena Guerrero. Digital designer, tinkerer, and lover of coding. Software Engineer at Swoop, former Computer Science Major at Harvey Mudd College.`
 
-  # Main author of the website
+# Main author of the website
 author: sienaguerrero
 email: hello@sienaguerrero.com
 
@@ -24,7 +23,79 @@ manyThanks:
   - item:
       - text: "Favicons by Teresa Ibarra"
       - url: "http://teresaibarra.github.io/"
-
   - item:
       - text: "Personal Icon by Lydia Amora"
       - url: "https://twitter.com/lydiaamora"
+
+# Contact page
+overline: DIGITAL DESIGNER, TINKERER, AND LOVER OF CODING
+heading:
+  title: Contact Me
+  image_fullwidth: "/headers/header_pier.jpg"
+subheading: I desire a career in technology with an organization that shares my passion for powerful, efficient, and elegant design.
+about-me:
+  - item: item 1
+  - item: item 2
+  - item: item 3
+contact-me: "Check out my resume and [send me an email](mailto: hello@sienaguerrero.com) for inquiries."
+
+# My story
+academic-interests:
+  - item: Human-Computer Interactions
+  - item: Socially Assistive Robots
+  - item: Computer Vision
+  - item: Artiﬁcial Intelligence
+  - item: UI/UX Design
+  - item: Cybersecurity
+personal-facts:
+  - item: Lived in 6 different US states
+  - item: Lived abroad (Japan) while father served in military
+my-timeline:
+  - item:
+      - year: 1997
+      - summary: Born in Corpus Christi, Texas.
+  - item:
+      - year: 1999
+      - summary: Moved to Edmond, Oklahoma.
+  - item:
+      - year: 2003
+      - summary: Moved to Okinawa, Japan.
+  - item:
+      - year: 2004
+      - summary: Discovered Neopets, launching my interest in the internet and building websites. Made my first site on Geocities for displaying my pixel art.
+  - item:
+      - year: 2007
+      - summary: Moved to Albuquerque, New Mexico.
+  - item:
+      - year: 2010
+      - summary: Took first formal programming classes in Java and C++ during the summer.
+  - item:
+      - year: 2012
+      - summary: Moved to Macon, Georgia.
+  - item:
+      - year: 2014
+      - summary: Moved to Burke, Virginia.
+  - item:
+      - year: 2015
+      - summary: Graduated from High School. Took a gap year after committing to Harvey Mudd College.
+  - item:
+      - year: 2016
+      - summary: Traveled to Ecuador, my grandparents’ homeland. Started college at Harvey Mudd College. Learned Python.
+  - item:
+      - year: 2017
+      - summary: Ruby, my Goldendoodle, was born. Declared major in Computer Science.
+  - item:
+      - year: 2018
+      - summary: Completed Mudd Wellness Greenhouse Project.
+  - item:
+      - year: 2019
+      - summary: Developed web app with team during Spring. Built personal website 1.0 in summer. Began interning at Swoop, at seed stage startup in Los Angeles.
+  - item:
+      - year: 2019
+      - summary: Started work full-time as a Software Engineer at Swoop.
+  - item:
+      - year: 2020
+      - summary: Started building this personal website 2.0.
+developers-who-inspire-me:
+  - name: Tania
+  - link: link
