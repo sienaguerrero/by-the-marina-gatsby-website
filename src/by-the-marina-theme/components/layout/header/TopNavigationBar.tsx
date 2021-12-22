@@ -1,5 +1,5 @@
 import React from "react";
-import { navigate } from "gatsby";
+import { graphql, navigate, useStaticQuery } from "gatsby";
 
 import {
   AppBar,
@@ -22,14 +22,13 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import TurquoiseNMHeart from "../../../assets/svg/TurquoiseNMHeart";
 import YAMLData from "../../../../content/_config.yaml";
+import Resume from "../../../../../static/downloads/SienaGuerrero-Resume.pdf";
 
 import { useScreenSize } from "../../../hooks/useScreenSize";
 
 import { ColorModeContext } from "../../../../../plugins/gatsby-plugin-top-layout/useAppTheme";
 import NavigationBarLink from "../navigation/NavigationBarLink";
 import { white } from "../../../../theme";
-
-import downloadFile from "../../../../downloads/SienaGuerrero-Resume.pdf";
 
 export const TOP_BAR_HEIGHT_MOBILE = 56;
 export const TOP_BAR_HEIGHT_DESKTOP = 78;
@@ -63,6 +62,8 @@ function TopNavigationBar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const resumeLink = "/SienaGuerrero-Resume.pdf"; //data.file.publicURL;
 
   const isDarkMode = theme.palette.mode === "dark";
 
@@ -152,7 +153,7 @@ function TopNavigationBar() {
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
                       <NavigationBarLink
-                        linkTo={downloadFile}
+                        linkTo={resumeLink}
                         linkText="My Resume"
                         download
                       />
@@ -222,7 +223,7 @@ function TopNavigationBar() {
                     linkText="My Projects"
                   />
                   <NavigationBarLink
-                    linkTo={downloadFile}
+                    linkTo={resumeLink}
                     linkText="My Resume"
                     download
                   />
