@@ -172,36 +172,6 @@ export default function IndexPage() {
                   </Link>{" "}
                   for inquiries.
                 </Typography>
-
-                <Box mt={1}>
-                  <Accordion square elevation={0}>
-                    <AccordionSummary
-                      expandIcon={<ExpandMoreIcon />}
-                      sx={{ paddingX: 0 }}
-                    >
-                      <Typography variant="subtitle2">
-                        A bit more about me...
-                      </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <Typography>
-                        My academic passions center around Human-Computer
-                        Interactions and Brain-Computer Interfaces. Some of my
-                        mini-passions include web development, open-source
-                        technology, and empowering women in tech.
-                      </Typography>
-
-                      <Typography sx={{ mb: 1 }}>
-                        I am particularly interested in improving human
-                        interactions with technology in our digital world by
-                        bringing together new concepts and research from the
-                        fields of psychology, data science, and computing. I
-                        strongly believe in the need for experimental and
-                        creative ideas to drive innovation.
-                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>
-                </Box>
               </Box>
             </Stack>
           </Container>
