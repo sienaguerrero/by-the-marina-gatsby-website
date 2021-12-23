@@ -14,8 +14,8 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import YAMLData from "../content/_config.yaml";
-import ImageHeader from "../by-the-marina-theme/components/layout/header/ImageHeader";
 import headerImage from "../by-the-marina-theme/assets/jpg/banners/headers/header_ecuador.jpg";
+import ImageHeaderLayout from "../by-the-marina-theme/components/layout/ImageHeaderLayout";
 
 // https://intuitiveexplanations.com/
 // https://www.taniarascia.com/
@@ -27,12 +27,7 @@ export default function AboutPage() {
     "On the road to Alausí, Ecuador, where my abuela was born.";
 
   return (
-    <>
-      <ImageHeader
-        imageSrc={headerImage}
-        imageAltTitle=""
-        imageCaption={imageCaption}
-      />
+    <ImageHeaderLayout headerImage={headerImage} imageCaption={imageCaption}>
       <Container maxWidth="lg">
         <Paper variant="outlined" sx={{ my: 1, p: 1 }}>
           <Typography variant="h3" sx={{ mb: 1 }}>
@@ -126,6 +121,6 @@ export default function AboutPage() {
           </Box>
         </Paper>
       </Container>
-    </>
+    </ImageHeaderLayout>
   );
 }
