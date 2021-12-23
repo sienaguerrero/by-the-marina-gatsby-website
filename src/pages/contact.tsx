@@ -1,29 +1,24 @@
 import React from "react";
 
 import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
   Box,
   Container,
   IconButton,
   Link,
-  Paper,
   Stack,
   Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
 
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 
 import ImageHeader from "../by-the-marina-theme/components/layout/header/ImageHeader";
-import headerImage from "../by-the-marina-theme/assets/jpg/banners/headers/header_ecuador.jpg";
+import headerImage from "../by-the-marina-theme/assets/jpg/banners/headers/header_ca-coast-ocean.jpg";
 
-import sienaAndRubyImage from "../images/img-siena-digital-portrait.jpg";
+import sienaDigitalPortrait from "../images/img-siena-digital-portrait.jpg";
 
 import YAMLData from "../content/_config.yaml";
 // https://intuitiveexplanations.com/
@@ -33,7 +28,9 @@ import YAMLData from "../content/_config.yaml";
 export default function AboutPage() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const imageCaption = "";
+
+  const imageCaption =
+    "Shot along the CA coast, during my roadtrip in Summer 2018.";
 
   return (
     <>
@@ -41,6 +38,7 @@ export default function AboutPage() {
         imageSrc={headerImage}
         imageAltTitle=""
         imageCaption={imageCaption}
+        imageOverlayText={YAMLData.name}
       />
       <Container maxWidth="lg">
         <Box sx={{ my: 1.5 }}>
@@ -55,82 +53,6 @@ export default function AboutPage() {
               spacing={1}
             >
               <Box
-                display="flex"
-                flexDirection="column"
-                alignItems="center"
-                sx={{
-                  minWidth: "220px",
-                  //border: `1px solid ${theme.palette.primary.main}`,
-                }}
-                m="auto"
-              >
-                <Box
-                  mb={1}
-                  sx={{
-                    width: "80%",
-                    backgroundColor: theme.palette.background.paper,
-                    p: 1,
-                    flex: 2,
-                    border: `1px solid ${theme.palette.primary.main}`,
-                  }}
-                >
-                  <Stack direction="row" spacing={2}>
-                    <IconButton
-                      color="primary"
-                      href={`https://www.linkedin.com/${YAMLData.socialMedia.github}`}
-                    >
-                      <LinkedInIcon />
-                    </IconButton>
-                    <IconButton
-                      color="primary"
-                      href={`https://www.linkedin.com/${YAMLData.socialMedia.linkedin}`}
-                    >
-                      <GitHubIcon />
-                    </IconButton>
-                    <IconButton
-                      color="primary"
-                      href={`mailto:${YAMLData.email}`}
-                    >
-                      <EmailIcon />
-                    </IconButton>
-                  </Stack>
-                </Box>
-
-                <Box
-                  p={1}
-                  component="img"
-                  src={sienaAndRubyImage}
-                  sx={{
-                    border: `1px solid ${theme.palette.primary.main}`,
-                    width: "220px",
-                    height: "220px",
-                  }}
-                />
-
-                <Box
-                  mt={1}
-                  sx={{
-                    width: "80%",
-                    backgroundColor: theme.palette.background.paper,
-                    p: 1,
-                    flex: 2,
-                    border: `1px solid ${theme.palette.primary.main}`,
-                  }}
-                >
-                  <Typography
-                    sx={{
-                      textAlign: "center",
-                      fontFamily: "Pacifico",
-                      fontSize: 24,
-                    }}
-                    color="primary"
-                  >
-                    {YAMLData.location}
-                  </Typography>
-                </Box>
-              </Box>
-
-              <Box
                 sx={{
                   backgroundColor: theme.palette.background.paper,
                   p: 3,
@@ -138,68 +60,146 @@ export default function AboutPage() {
                   border: `1px solid ${theme.palette.primary.main}`,
                 }}
               >
-                <Box mb={1}>
-                  <Typography
-                    display="inline"
-                    variant="h4"
-                    sx={{ fontFamily: "Pacifico", mr: 1 }}
-                  >
-                    Hi,
-                  </Typography>
-                  <Typography display="inline">my name is Siena!</Typography>
-                </Box>
+                <Box display="flex">
+                  <Box mr={1}>
+                    <Box
+                      display="flex"
+                      flexDirection="column"
+                      alignItems="center"
+                      sx={{
+                        minWidth: "220px",
+                      }}
+                      m="auto"
+                    >
+                      <Box
+                        p={1}
+                        component="img"
+                        src={sienaDigitalPortrait}
+                        sx={{
+                          border: `1px solid ${theme.palette.primary.main}`,
+                          width: "220px",
+                          height: "220px",
+                        }}
+                      />
 
-                <Box>
-                  <Box mb={1}>
-                    <Typography variant="h5" sx={{ mb: 1 }}>
-                      Linkedin:{" "}
-                      <Link href="https://www.linkedin.com/in/sienaguerrero/">
-                        sienaguerrero
-                      </Link>
-                    </Typography>
+                      <Box
+                        mt={1}
+                        sx={{
+                          width: "80%",
+                          backgroundColor: theme.palette.background.paper,
+                          p: 1,
+                          flex: 2,
+                          border: `1px solid ${theme.palette.primary.main}`,
+                        }}
+                      >
+                        <Stack direction="row" spacing={2}>
+                          <IconButton
+                            color="primary"
+                            href={`https://www.linkedin.com/${YAMLData.socialMedia.github}`}
+                          >
+                            <LinkedInIcon />
+                          </IconButton>
+                          <IconButton
+                            color="primary"
+                            href={`https://www.linkedin.com/${YAMLData.socialMedia.linkedin}`}
+                          >
+                            <GitHubIcon />
+                          </IconButton>
+                          <IconButton
+                            color="primary"
+                            href={`mailto:${YAMLData.email}`}
+                          >
+                            <EmailIcon />
+                          </IconButton>
+                        </Stack>
+                      </Box>
+
+                      <Box
+                        mt={1}
+                        sx={{
+                          width: "80%",
+                          backgroundColor: theme.palette.background.paper,
+                          p: 1,
+                          flex: 2,
+                          border: `1px solid ${theme.palette.primary.main}`,
+                        }}
+                      >
+                        <Typography
+                          sx={{
+                            textAlign: "center",
+                            fontFamily: "Pacifico",
+                            fontSize: 24,
+                          }}
+                          color="primary"
+                        >
+                          {YAMLData.location}
+                        </Typography>
+                      </Box>
+                    </Box>
                   </Box>
 
-                  <Box mb={1}>
-                    <Typography variant="h5" sx={{ mb: 1 }}>
-                      Github:{" "}
-                      <Link href="https://github.com/sienaguerrero">
-                        sienaguerrero
-                      </Link>{" "}
-                      for inquiries.
-                    </Typography>
-                  </Box>
+                  <Box display="flex" flexDirection="column">
+                    <Box mb={1}>
+                      <Typography
+                        display="inline"
+                        variant="h4"
+                        sx={{ fontFamily: "Pacifico", mr: 1 }}
+                      >
+                        Hi,
+                      </Typography>
+                      <Typography display="inline">
+                        my name is Siena!
+                      </Typography>
+                    </Box>
 
-                  <Box>
-                    <Typography variant="h5" sx={{ mb: 1 }}>
-                      Email:{" "}
+                    <Box>
+                      <Box mb={1}>
+                        <Typography variant="h5" sx={{ mb: 1 }}>
+                          Linkedin:{" "}
+                          <Link href="https://www.linkedin.com/in/sienaguerrero/">
+                            sienaguerrero
+                          </Link>
+                        </Typography>
+                      </Box>
+
+                      <Box mb={1}>
+                        <Typography variant="h5" sx={{ mb: 1 }}>
+                          Github:{" "}
+                          <Link href="https://github.com/sienaguerrero">
+                            sienaguerrero
+                          </Link>{" "}
+                          for inquiries.
+                        </Typography>
+                      </Box>
+
+                      <Box>
+                        <Typography variant="h5" sx={{ mb: 1 }}>
+                          Email:{" "}
+                          <Link
+                            href="mailto:
+                  hello@sienaguerrero.com"
+                          >
+                            hello@sienaguerrero.com
+                          </Link>{" "}
+                        </Typography>
+                      </Box>
+                    </Box>
+                    <Typography sx={{ mb: 1 }}>
+                      Check out my resume and{" "}
                       <Link
                         href="mailto:
                   hello@sienaguerrero.com"
                       >
-                        hello@sienaguerrero.com
+                        send me an email
                       </Link>{" "}
+                      for inquiries.
                     </Typography>
                   </Box>
                 </Box>
-
-                <Typography sx={{ mb: 1 }}>
-                  Check out my resume and{" "}
-                  <Link
-                    href="mailto:
-                  hello@sienaguerrero.com"
-                  >
-                    send me an email
-                  </Link>{" "}
-                  for inquiries.
-                </Typography>
               </Box>
             </Stack>
           </Container>
         </Box>
-
-        <Typography></Typography>
-        <Typography></Typography>
-        <Typography></Typography>
       </Container>
     </>
   );

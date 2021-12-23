@@ -10,36 +10,17 @@ import Stack from "@mui/material/Stack";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import YAMLData from "../content/_config.yaml";
 import sienaAndRubyImage from "../images/ruby-and-siena.jpg";
-import ImageHeader from "../by-the-marina-theme/components/layout/header/ImageHeader";
-import headerImage from "../by-the-marina-theme/assets/jpg/banners/headers/header_ca-coast-ocean.jpg";
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  IconButton,
-  Link,
-  Typography,
-} from "@mui/material";
+import { IconButton, Link, Typography } from "@mui/material";
 
 export default function IndexPage() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const imageCaption =
-    "Shot along the CA coast, during my roadtrip in Summer 2018.";
-
   return (
     <>
-      <ImageHeader
-        imageSrc={headerImage}
-        imageAltTitle=""
-        imageCaption={imageCaption}
-        imageOverlayText={YAMLData.name}
-      />
       <Container maxWidth="lg">
         <Box sx={{ my: 1.5 }}>
           <Container maxWidth="md">
