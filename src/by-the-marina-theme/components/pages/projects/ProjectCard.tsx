@@ -21,7 +21,7 @@ function ProjectCard(props: ProjectCardProps) {
     <Box
       sx={{
         p: 1,
-        width: "320px",
+        width: "100%",
         border: `1px solid ${theme.palette.primary.light}`,
         borderRadius: 4,
       }}
@@ -30,7 +30,7 @@ function ProjectCard(props: ProjectCardProps) {
         {projectName}
       </Typography>
       <Typography display="inline" sx={{ fontWeight: "bold" }}>
-        Project Info:
+        Project Info:{" "}
       </Typography>
       <Typography display="inline">{projectDescription}</Typography>
       {endNote && (

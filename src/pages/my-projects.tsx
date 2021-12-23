@@ -4,6 +4,7 @@ import Masonry from "@mui/lab/Masonry";
 import {
   Box,
   Container,
+  Grid,
   Link,
   Paper,
   Typography,
@@ -132,7 +133,7 @@ export default function ProjectsPage() {
           <Typography variant="h3" sx={{ mb: 1 }}>
             Major Projects
           </Typography>
-          <Masonry columns={2} spacing={1}>
+          <Box display="flex" flexWrap="wrap" justifyContent="space-between">
             {projects
               .filter((project) => project.type === "Major Project")
               ?.map((project) => {
@@ -141,21 +142,23 @@ export default function ProjectsPage() {
                 const projectEndNote = project.endNote;
 
                 return (
-                  <ProjectCard
-                    projectName={projectName}
-                    projectDescription={projectDescription}
-                    endNote={projectEndNote}
-                  />
+                  <Box p={1} flex={1}>
+                    <ProjectCard
+                      projectName={projectName}
+                      projectDescription={projectDescription}
+                      endNote={projectEndNote}
+                    />
+                  </Box>
                 );
               })}
-          </Masonry>
+          </Box>
         </Paper>
 
         <Paper variant="outlined" sx={{ my: 1, p: 1 }}>
           <Typography variant="h3" sx={{ mb: 1 }}>
             Minor Projects
           </Typography>
-          <Masonry columns={2} spacing={1}>
+          <Box display="flex" flexWrap="wrap" justifyContent="space-between">
             {projects
               .filter((project) => project.type === "Minor Project")
               ?.map((project) => {
@@ -164,21 +167,23 @@ export default function ProjectsPage() {
                 const projectEndNote = project.endNote;
 
                 return (
-                  <ProjectCard
-                    projectName={projectName}
-                    projectDescription={projectDescription}
-                    endNote={projectEndNote}
-                  />
+                  <Box p={1} flex={1}>
+                    <ProjectCard
+                      projectName={projectName}
+                      projectDescription={projectDescription}
+                      endNote={projectEndNote}
+                    />
+                  </Box>
                 );
               })}
-          </Masonry>
+          </Box>
         </Paper>
 
         <Paper variant="outlined" sx={{ my: 1, p: 1 }}>
           <Typography variant="h3" sx={{ mb: 1 }}>
             Academic Writing
           </Typography>
-          <Masonry columns={2} spacing={1}>
+          <Box display="flex" flexWrap="wrap" justifyContent="space-between">
             {projects
               .filter((project) => project.type === "Academic Writing")
               ?.map((project) => {
@@ -187,14 +192,16 @@ export default function ProjectsPage() {
                 const projectEndNote = project.endNote;
 
                 return (
-                  <ProjectCard
-                    projectName={projectName}
-                    projectDescription={projectDescription}
-                    endNote={projectEndNote}
-                  />
+                  <Box p={1} flex={1}>
+                    <ProjectCard
+                      projectName={projectName}
+                      projectDescription={projectDescription}
+                      endNote={projectEndNote}
+                    />
+                  </Box>
                 );
               })}
-          </Masonry>
+          </Box>
         </Paper>
       </Container>
     </ImageHeaderLayout>
