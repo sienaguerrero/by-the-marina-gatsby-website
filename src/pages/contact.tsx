@@ -85,14 +85,14 @@ export default function AboutPage() {
                       <Box
                         mt={1}
                         sx={{
-                          width: "80%",
+                          width: "100%",
                           backgroundColor: theme.palette.background.paper,
                           p: 1,
                           flex: 2,
                           border: `1px solid ${theme.palette.primary.main}`,
                         }}
                       >
-                        <Stack direction="row" spacing={2}>
+                        <Box display="flex" justifyContent="space-between">
                           <IconButton
                             color="primary"
                             href={`https://www.linkedin.com/${YAMLData.socialMedia.github}`}
@@ -111,13 +111,13 @@ export default function AboutPage() {
                           >
                             <EmailIcon />
                           </IconButton>
-                        </Stack>
+                        </Box>
                       </Box>
 
                       <Box
                         mt={1}
                         sx={{
-                          width: "80%",
+                          width: "100%",
                           backgroundColor: theme.palette.background.paper,
                           p: 1,
                           flex: 2,
@@ -138,8 +138,8 @@ export default function AboutPage() {
                     </Box>
                   </Box>
 
-                  <Box display="flex" flexDirection="column">
-                    <Box mb={1}>
+                  <Box p={2} display="flex" flexDirection="column">
+                    <Box mb={4}>
                       <Typography
                         display="inline"
                         variant="h4"
@@ -152,7 +152,7 @@ export default function AboutPage() {
                       </Typography>
                     </Box>
 
-                    <Box>
+                    <Box mb={4}>
                       <Box mb={1}>
                         <Typography variant="h5" sx={{ mb: 1 }}>
                           Linkedin:{" "}

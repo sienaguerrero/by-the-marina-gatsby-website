@@ -1,10 +1,8 @@
 import React from "react";
 
-import Masonry from "@mui/lab/Masonry";
 import {
   Box,
   Container,
-  Grid,
   Link,
   Paper,
   Typography,
@@ -26,7 +24,7 @@ export default function ProjectsPage() {
 
   const projects = [
     {
-      type: "Major Project",
+      type: "Other Project",
       projectName: "Harvey Mudd Wellness Greenhouse",
       projectDescription: `The Mudd Wellness Greenhouse, or "Mudd Greenhouse" was a space on campus
       to provide students access to tools, supplies, and storage for all
@@ -181,11 +179,15 @@ export default function ProjectsPage() {
 
         <Paper variant="outlined" sx={{ my: 1, p: 1 }}>
           <Typography variant="h3" sx={{ mb: 1 }}>
-            Academic Writing
+            Other Projects
           </Typography>
           <Box display="flex" flexWrap="wrap" justifyContent="space-between">
             {projects
-              .filter((project) => project.type === "Academic Writing")
+              .filter(
+                (project) =>
+                  project.type === "Academic Writing" ||
+                  project.type === "Other Project"
+              )
               ?.map((project) => {
                 const projectName = project.projectName;
                 const projectDescription = project.projectDescription;
