@@ -141,8 +141,9 @@ function TopNavigationBar() {
                   >
                     <MenuItem onClick={handleClose}>
                       <NavigationBarLink
-                        linkTo="/my-story"
-                        linkText="My Story"
+                        linkTo={resumeLink}
+                        linkText="My Resume"
+                        download
                       />
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
@@ -153,16 +154,12 @@ function TopNavigationBar() {
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
                       <NavigationBarLink
-                        linkTo={resumeLink}
-                        linkText="My Resume"
-                        download
+                        linkTo="/my-story"
+                        linkText="My Story"
                       />
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
                       <NavigationBarLink linkTo="/contact" linkText="Contact" />
-                    </MenuItem>
-                    <MenuItem onClick={handleClose}>
-                      <NavigationBarLink linkTo="/about" linkText="About" />
                     </MenuItem>
                   </Menu>
                 </Box>
@@ -217,16 +214,17 @@ function TopNavigationBar() {
                   spacing={{ xs: 0.5, sm: 1, md: 2 }}
                   sx={{ alignItems: "center" }}
                 >
-                  <NavigationBarLink linkTo="/my-story" linkText="My Story" />
-                  <NavigationBarLink
-                    linkTo="/my-projects"
-                    linkText="My Projects"
-                  />
                   <NavigationBarLink
                     linkTo={resumeLink}
                     linkText="My Resume"
                     download
                   />
+                  <NavigationBarLink
+                    linkTo="/my-projects"
+                    linkText="My Projects"
+                  />
+
+                  <NavigationBarLink linkTo="/my-story" linkText="My Story" />
                   <NavigationBarLink linkTo="/contact" linkText="Contact" />
 
                   <Box p={1} mr={1}>
