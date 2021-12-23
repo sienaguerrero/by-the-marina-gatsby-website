@@ -95,7 +95,7 @@ export default function ProjectsPage() {
       ),
     },
     {
-      type: "Academic Paper",
+      type: "Academic Writing",
       projectName: "Human Data Science Ethics Paper",
       projectDescription: `A policy memo on socially-assistive robots detailing core issues,
       moral approaches, current contexts, and recommendations for future
@@ -110,7 +110,7 @@ export default function ProjectsPage() {
       ),
     },
     {
-      type: "Academic Paper",
+      type: "Academic Writing",
       projectName: "Science, Technology, and Society Paper",
       projectDescription: `A reflection paper on trash innovation, and hope during the
       Anthropocene entitled: "Trash, Hope, and the Anthropocene".`,
@@ -132,29 +132,10 @@ export default function ProjectsPage() {
           <Typography variant="h3" sx={{ mb: 1 }}>
             Major Projects
           </Typography>
-          {projects
-            .filter((project) => project.type === "Major Project")
-            ?.map((project) => {
-              const projectName = project.projectName;
-              const projectDescription = project.projectDescription;
-              const projectEndNote = project.endNote;
-
-              return (
-                <ProjectCard
-                  projectName={projectName}
-                  projectDescription={projectDescription}
-                  endNote={projectEndNote}
-                />
-              );
-            })}
-
-          <Typography variant="h3" sx={{ mb: 1 }}>
-            Minor Projects
-          </Typography>
           <Masonry columns={2} spacing={1}>
             {projects
-              .filter((project) => project.type === "Minor Project")
-              ?.map((project, index) => {
+              .filter((project) => project.type === "Major Project")
+              ?.map((project) => {
                 const projectName = project.projectName;
                 const projectDescription = project.projectDescription;
                 const projectEndNote = project.endNote;
@@ -168,135 +149,52 @@ export default function ProjectsPage() {
                 );
               })}
           </Masonry>
+        </Paper>
 
+        <Paper variant="outlined" sx={{ my: 1, p: 1 }}>
+          <Typography variant="h3" sx={{ mb: 1 }}>
+            Minor Projects
+          </Typography>
+          <Masonry columns={2} spacing={1}>
+            {projects
+              .filter((project) => project.type === "Minor Project")
+              ?.map((project) => {
+                const projectName = project.projectName;
+                const projectDescription = project.projectDescription;
+                const projectEndNote = project.endNote;
+
+                return (
+                  <ProjectCard
+                    projectName={projectName}
+                    projectDescription={projectDescription}
+                    endNote={projectEndNote}
+                  />
+                );
+              })}
+          </Masonry>
+        </Paper>
+
+        <Paper variant="outlined" sx={{ my: 1, p: 1 }}>
           <Typography variant="h3" sx={{ mb: 1 }}>
             Academic Writing
           </Typography>
-          {projects
-            .filter((project) => project.type === "Academic Writing")
-            ?.map((project) => {
-              const projectName = project.projectName;
-              const projectDescription = project.projectDescription;
-              const projectEndNote = project.endNote;
+          <Masonry columns={2} spacing={1}>
+            {projects
+              .filter((project) => project.type === "Academic Writing")
+              ?.map((project) => {
+                const projectName = project.projectName;
+                const projectDescription = project.projectDescription;
+                const projectEndNote = project.endNote;
 
-              return (
-                <ProjectCard
-                  projectName={projectName}
-                  projectDescription={projectDescription}
-                  endNote={projectEndNote}
-                />
-              );
-            })}
-
-          <Box
-            sx={{
-              minWidth: "220px",
-              border: `1px solid ${theme.palette.primary.light}`,
-            }}
-          >
-            <Typography variant="h4">Groover Web App</Typography>
-            <Typography display="inline" sx={{ fontWeight: "bold" }}>
-              Project Info:
-            </Typography>
-            <Typography display="inline">
-              Groover is a web app that generate music recommendations based on
-              your favorite song's lyrical content. This project was developed
-              during "CS121: Software Development" at Harvey Mudd College in
-              Spring 2019. **To watch a demo:** [click
-              here](https://sienaguerrero.com/static/downloads/Groover-Demo.mp4)
-              **To visit the Github repo:** [click
-              here](https://github.com/sienaguerrero/groover)
-              {/* \\ **To see it
-                in action:** [click here](http://www.groovermusic.net/) _note:
-                site may take a while to load on first launch_ \\ */}
-            </Typography>
-          </Box>
-        </Paper>
-
-        <Paper variant="outlined" sx={{ my: 1, p: 1 }}>
-          <Typography variant="h3">Minor Projects</Typography>
-          <Box
-            sx={{
-              minWidth: "220px",
-              border: `1px solid ${theme.palette.primary.light}`,
-            }}
-          >
-            <Typography variant="h4">Cuarenta</Typography>
-            <Typography display="inline" sx={{ fontWeight: "bold" }}>
-              Project Info:
-            </Typography>
-            <Typography display="inline">
-              Java program based on the card game "Cuarenta" (the national card
-              game of Ecuador). Currently in development. **To visit the Github
-              repo:** [click here](https://github.com/sienaguerrero/cuarenta)
-            </Typography>
-          </Box>
-
-          <Box
-            sx={{
-              minWidth: "220px",
-              border: `1px solid ${theme.palette.primary.light}`,
-            }}
-          >
-            <Typography variant="h4">
-              Climate Change Data Visualization Site
-            </Typography>
-            <Typography display="inline" sx={{ fontWeight: "bold" }}>
-              Project Info:
-            </Typography>
-            <Typography display="inline">
-              Climate change data visualization website made using graphs from
-              Bokeh, an interactive visualization library for Python. This
-              project was developed as part of a group final project during
-              "CS35: Computer Science for Insight" at Harvey Mudd College in
-              Spring 2017. **To visit the Github repo:** [click
-              here](https://github.com/sienaguerrero/cs35-final-project)
-            </Typography>
-          </Box>
-        </Paper>
-
-        <Paper variant="outlined" sx={{ my: 1, p: 1 }}>
-          <Typography variant="h3">Academic Writing</Typography>
-          <Box
-            sx={{
-              minWidth: "220px",
-              border: `1px solid ${theme.palette.primary.light}`,
-            }}
-          >
-            <Typography variant="h4">
-              Human Data Science Ethics Paper
-            </Typography>
-            <Typography display="inline" sx={{ fontWeight: "bold" }}>
-              Project Info:
-            </Typography>
-            <Typography display="inline">
-              A policy memo on socially-assistive robots detailing core issues,
-              moral approaches, current contexts, and recommendations for future
-              use of this technology. Written at the end of Fall 2018. **To read
-              the paper:** [click
-              here](https://sienaguerrero.com/downloads/HDSE-policy-memo-social-robots.pdf)
-            </Typography>
-          </Box>
-
-          <Box
-            sx={{
-              minWidth: "220px",
-              border: `1px solid ${theme.palette.primary.light}`,
-            }}
-          >
-            <Typography variant="h4">
-              Science, Technology, and Society Paper
-            </Typography>
-            <Typography display="inline" sx={{ fontWeight: "bold" }}>
-              Project Info:
-            </Typography>
-            <Typography display="inline">
-              A reflection paper on trash innovation, and hope during the
-              Anthropocene entitled: "Trash, Hope, and the Anthropocene". **To
-              read the paper:** [click
-              here](https://sienaguerrero.com/downloads/sts-reflection-trash-hope.pdf)
-            </Typography>
-          </Box>
+                return (
+                  <ProjectCard
+                    projectName={projectName}
+                    projectDescription={projectDescription}
+                    endNote={projectEndNote}
+                  />
+                );
+              })}
+          </Masonry>
         </Paper>
       </Container>
     </ImageHeaderLayout>
