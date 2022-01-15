@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-projects-tsx-37bd87af00d698b1ec2d.js","mappings":"0LAEe,SAASA,IACtB,OAAO","sources":["webpack://by-the-marina-theme/./src/pages/projects.tsx"],"sourcesContent":["import React from \"react\";\n\nexport default function ProjectsPage() {\n  return <div>YOLO SWAG</div>;\n}\n"],"names":["ProjectsPage"],"sourceRoot":""}
