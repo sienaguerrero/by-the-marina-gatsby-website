@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkby_the_marina_theme=self.webpackChunkby_the_marina_theme||[]).push([[317],{2897:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});var u=t(7294);function r(){return u.createElement("div",null,"YOLO SWAG")}}}]);
-//# sourceMappingURL=component---src-pages-projects-tsx-37bd87af00d698b1ec2d.js.map

@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkby_the_marina_theme=self.webpackChunkby_the_marina_theme||[]).push([[49],{8509:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});var u=t(7294);function r(){return u.createElement("div",null,"YOLO SWAG")}}}]);
-//# sourceMappingURL=component---src-pages-about-tsx-893858181554769d3d11.js.map
