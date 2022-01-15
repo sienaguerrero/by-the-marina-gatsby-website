@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-contact-tsx-746fb637bfe20b3e558f.js","mappings":"0LAEe,SAASA,IACtB,OAAO","sources":["webpack://by-the-marina-theme/./src/pages/contact.tsx"],"sourcesContent":["import React from \"react\";\n\nexport default function ContactPage() {\n  return <div>YOLO SWAG</div>;\n}\n"],"names":["ContactPage"],"sourceRoot":""}
