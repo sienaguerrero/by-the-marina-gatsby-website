@@ -94,7 +94,7 @@ function Footer() {
         >
           <Typography>
             Created with &hearts; by{" "}
-            <Link href="https://github.com/sienaguerrero.">sienaguerrero</Link>{" "}
+            <Link href="https://github.com/sienaguerrero">sienaguerrero</Link>{" "}
             with{" "}
             <Link href="https://www.gatsbyjs.com/" target="_blank">
               Gatsby
@@ -104,12 +104,12 @@ function Footer() {
 
           <Stack direction="row" spacing={2}>
             <IconButton
-              href={`https://www.linkedin.com/in/${yamlData.socialMedia.github}`}
+              href={`https://www.linkedin.com/in/${yamlData.socialMedia.linkedin}`}
             >
               <LinkedInIcon />
             </IconButton>
             <IconButton
-              href={`https://www.github.com/${yamlData.socialMedia.linkedin}`}
+              href={`https://www.github.com/${yamlData.socialMedia.github}`}
             >
               <GitHubIcon />
             </IconButton>

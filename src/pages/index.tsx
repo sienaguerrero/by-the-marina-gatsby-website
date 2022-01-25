@@ -56,13 +56,13 @@ export default function IndexPage() {
                   <Stack direction="row" spacing={2}>
                     <IconButton
                       color="primary"
-                      href={`https://www.linkedin.com/${YAMLData.socialMedia.github}`}
+                      href={`https://www.linkedin.com/${YAMLData.socialMedia.linkedin}`}
                     >
                       <LinkedInIcon />
                     </IconButton>
                     <IconButton
                       color="primary"
-                      href={`https://www.linkedin.com/${YAMLData.socialMedia.linkedin}`}
+                      href={`https://www.linkedin.com/${YAMLData.socialMedia.github}`}
                     >
                       <GitHubIcon />
                     </IconButton>
