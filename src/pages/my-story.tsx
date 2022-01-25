@@ -105,7 +105,6 @@ export default function AboutPage() {
             }}
           >
             {YAMLData["my-timeline"].map((data, i) => {
-              console.log(data);
               return (
                 <Box>
                   <Typography display="inline" sx={{ fontWeight: "bold" }}>
