@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, navigate, useStaticQuery } from "gatsby";
+import { navigate } from "gatsby";
 
 import {
   AppBar,
@@ -22,7 +22,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import TurquoiseNMHeart from "../../../assets/svg/TurquoiseNMHeart";
 import YAMLData from "../../../../content/_config.yaml";
-import Resume from "../../../../../static/downloads/SienaGuerrero-Resume.pdf";
 
 import { useScreenSize } from "../../../hooks/useScreenSize";
 
