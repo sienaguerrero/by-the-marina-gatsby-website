@@ -62,7 +62,7 @@ export default function IndexPage() {
                     </IconButton>
                     <IconButton
                       color="primary"
-                      href={`https://www.linkedin.com/${YAMLData.socialMedia.github}`}
+                      href={`https://www.github.com/${YAMLData.socialMedia.github}`}
                     >
                       <GitHubIcon />
                     </IconButton>
