@@ -104,5 +104,12 @@ my-timeline:
       - year: March 2022
       - summary: Started working full-time as a Software Engineer at Handshake.
 developers-who-inspire-me:
-  - name: Tania
-  - link: link
+  - item:
+      - name: Tania Rascia
+      - link: https://www.taniarascia.com
+  - item:
+      - name: Radon Rasborough
+      - link: https://intuitiveexplanations.com
+  - item:
+      - name: Chris Beams
+      - link: https://chris.beams.io/
