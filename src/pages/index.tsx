@@ -129,15 +129,17 @@ export default function IndexPage() {
                 </Box>
 
                 <Typography sx={{ mb: 1 }}>
-                  I'm a Software Engineer at{" "}
-                  <Link href="https://www.swoopapp.com">Swoop, Inc</Link>, an
-                  organization that shares my passion for powerful, efficient,
-                  and elegant design.
+                  I'm a Software Engineer on the Platform Services team at{" "}
+                  <Link href="https://joinhandshake.com/">Handshake</Link>, an
+                  organization that shares my passion for empowering user and .
                 </Typography>
 
                 <Typography sx={{ mb: 1 }}>
-                  Before entering the world of startups, I studied Computer
-                  Science at{" "}
+                  I'm a former fullstack engineer at{" "}
+                  <Link href="https://swoopapp.com/">Swoop, Inc.</Link> a really
+                  neat transportation startup based in Los Angeles. Before
+                  entering the world of startups, I studied Computer Science for
+                  three years at{" "}
                   <Link href="https://www.hmc.edu">Harvey Mudd College.</Link>{" "}
                   You can see projects illustrating some of my other passions
                   and academic pursuits <Link href="/my-projects">here.</Link>
