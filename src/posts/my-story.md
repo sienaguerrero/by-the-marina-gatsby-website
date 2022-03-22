@@ -2,7 +2,6 @@
 path: "my-story"
 title: "My Story"
 subheadline: "Digital Designer, Tinkerer, and Lover of Coding"
-teaser: "I desire a career in technology with an organization that shares my passion for powerful, efficient, and elegant design."
 permalink: "/my-story/"
 header:
   title: My Story
@@ -57,9 +56,3 @@ Lived in 6 different US states • Lived abroad (Japan) • Military child • E
 **2017**: Ruby, my Goldendoodle, was born. Declared major in Computer Science. \\
 **2018**: Completed Mudd Wellness Greenhouse Project. \\
 **2019**: Developed web app with team during Spring. Started working on this website in summer.
-
-## Developers who inspired me while making this site
-
-[Chris Beams](https://chris.beams.io/) \\
-[Tania Rascia](https://www.taniarascia.com) \\
-[Radon Rasborough](https://intuitiveexplanations.com)
