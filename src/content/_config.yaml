@@ -92,11 +92,17 @@ my-timeline:
       - year: 2019
       - summary: Developed web app with team during Spring. Built personal website 1.0 in summer. Began interning at Swoop, at seed stage startup in Los Angeles.
   - item:
-      - year: 2019
-      - summary: Started work full-time as a Software Engineer at Swoop.
+      - year: March 2019
+      - summary: Started working full-time as a Software Engineer at Swoop.
   - item:
       - year: 2020
-      - summary: Started building this personal website 2.0.
+      - summary: Started building Hippokampus, a personal note/reminder app.
+  - item:
+      - year: 2021
+      - summary: Started building personal website 2.0.
+  - item:
+      - year: March 2022
+      - summary: Started working full-time as a Software Engineer at Handshake.
 developers-who-inspire-me:
   - name: Tania
   - link: link
