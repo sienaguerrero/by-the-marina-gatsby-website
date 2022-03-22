@@ -3,10 +3,8 @@ title: "Siena Guerrero"
 name: "Siena Maria Guerrero"
 location: "Los Angeles"
 slogan: "Tech Enthusiast, Software Engineer"
-callout: "Currently looking for research or cs-related internships in Summer 2020."
-
 # Use a maximum of 150 characters for SEO-purposes.
-description: Personal website for Siena Guerrero. Digital designer, tinkerer, and lover of coding. Software Engineer at Swoop, former Computer Science Major at Harvey Mudd College.`
+description: Personal website for Siena Guerrero. Digital designer, tinkerer, and lover of coding. Software Engineer at Handshake, former Software Engineer at Swoop. Computer Science Major (indefinitely paused!) at Harvey Mudd College.`
 
 # Main author of the website
 author: sienaguerrero
@@ -32,7 +30,7 @@ overline: DIGITAL DESIGNER, TINKERER, AND LOVER OF CODING
 heading:
   title: Contact Me
   image_fullwidth: "/headers/header_pier.jpg"
-subheading: I desire a career in technology with an organization that shares my passion for powerful, efficient, and elegant design.
+subheading: Software engineer passionate about powerful, efficient, and elegant design.
 about-me:
   - item: item 1
   - item: item 2
