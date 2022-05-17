@@ -9,3 +9,5 @@ To see a preview in action, visit [sienaguerrero.com](http://www.sienaguerrero.c
 To host locally:
 
 1. Run using `yarn start`
+
+Reminder: `echo 'sienaguerrero.com' >> CNAME`
