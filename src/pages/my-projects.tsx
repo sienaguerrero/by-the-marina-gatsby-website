@@ -59,7 +59,13 @@ export default function ProjectsPage() {
     {
       type: "Major Project",
       projectName: "Hippokampus",
-      projectDescription: `Hippokampus is an electron app that holds information pertaining to the users contacts and preferences`,
+      projectDescription: `Hippokampus is an electron app that holds information pertaining to the users contacts and preferences.`,
+      endNote: `Private Personal Project ;)`,
+    },
+    {
+      type: "Major Project",
+      projectName: "Plantae",
+      projectDescription: `Hippokampus is a ruby on rails app that catalogs plant information.`,
       endNote: `Private Personal Project ;)`,
     },
     {

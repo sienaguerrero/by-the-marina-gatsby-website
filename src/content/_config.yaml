@@ -102,8 +102,12 @@ my-timeline:
       - year: 2021
       - summary: Started building personal website 2.0.
   - item:
+      - year: February 2022
+      - summary: Started building Plantae, a personal plant diary app.
+  - item:
       - year: March 2022
       - summary: Started working full-time as a Software Engineer at Handshake.
+
 developers-who-inspire-me:
   - item:
       - name: Tania Rascia
