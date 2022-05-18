@@ -25,7 +25,7 @@ jobs:
         with:
           ref: gh-pages
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: CNAME file creation
         run: |
           cd static/
           echo "sienaguerrero.com" > CNAME
