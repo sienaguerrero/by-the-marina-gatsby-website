@@ -62,7 +62,7 @@ function TopNavigationBar() {
     setAnchorEl(null);
   };
 
-  const resumeLink = "/downloads/SienaGuerrero_Resume.pdf"; //data.file.publicURL;
+  const resumeLink = YAMLData.resumeLink;
 
   const isDarkMode = theme.palette.mode === "dark";
 
