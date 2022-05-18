@@ -131,7 +131,8 @@ export default function IndexPage() {
                 <Typography sx={{ mb: 1 }}>
                   I'm a Software Engineer on the Platform Services team at{" "}
                   <Link href="https://joinhandshake.com/">Handshake</Link>, an
-                  organization that shares my passion for empowering user and .
+                  organization that shares my passion for democratizing
+                  opportunity.
                 </Typography>
 
                 <Typography sx={{ mb: 1 }}>
