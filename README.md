@@ -10,4 +10,9 @@ To host locally:
 
 1. Run using `yarn start`
 
-Reminder: `echo 'sienaguerrero.com' >> CNAME`
+To deploy:
+
+1. You will need:
+   `npm install -g gatsby-cli`
+
+2. Reminder: `echo 'www.sienaguerrero.com' >> CNAME`
