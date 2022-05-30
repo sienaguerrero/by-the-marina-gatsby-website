@@ -136,12 +136,15 @@ export default function IndexPage() {
                 </Typography>
 
                 <Typography sx={{ mb: 1 }}>
-                  I'm a former fullstack engineer at{" "}
+                  Before joining Handshake, I was a fullstack engineer at{" "}
                   <Link href="https://swoopapp.com/">Swoop, Inc.</Link> a really
                   neat transportation startup based in Los Angeles. Before
                   entering the world of startups, I studied Computer Science for
                   three years at{" "}
-                  <Link href="https://www.hmc.edu">Harvey Mudd College.</Link>{" "}
+                  <Link href="https://www.hmc.edu">Harvey Mudd College.</Link>
+                </Typography>
+
+                <Typography sx={{ mb: 1 }}>
                   You can see projects illustrating some of my other passions
                   and academic pursuits <Link href="/my-projects">here.</Link>
                 </Typography>
